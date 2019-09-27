@@ -8,3 +8,6 @@ bot.on('message', msg =>{
 bot.on('message', msg =>{
    bot.sendMessage(msg.chat.id,`${msg.from.first_name}, напишите че нада епт все сделаем красиво`)
 })
+ if (messageText === 'справка')
+
+    {sendMessageByBot(messageChatId, "Вас приветствует магазин")}
