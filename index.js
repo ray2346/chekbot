@@ -3,11 +3,10 @@ const TelegramBot = require ('node-telegram-bot-api')
 const TOKEN = '857890236:AAHdpbmsUX7nMbOBmVVk0ubyW3mZZqxue08'
 const bot = new TelegramBot (TOKEN, {polling: true})
 bot.on('message', msg =>{
-   bot.sendMessage(msg.chat.id,`Привет от chekbot: "Hi,🤝 ${msg.from.first_name}"`)
+   bot.sendMessage(msg.chat.id,`Привет от chekbot: "Hi,🤝 ${msg.from.first_name}"
+для продолжения отправь слово "спрака"`)
 })
-('message', msg =>{
-   bot.sendMessage(msg.chat.id,`${msg.from.first_name}, пожалуйста распишите данные:
-- тип справки (доктор, диагноз);
+bot.hears('справка', (ctx) => ctx.reply('`${msg.from.first_name}, пожалуйста распишите данные:
+- тип справки (доктор, диагноз)
 - ФИО
-- дата рождения`)
-})
+- дата рождения`'))
