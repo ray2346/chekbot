@@ -9,7 +9,7 @@ bot.on('message', msg =>{
 
 bot.onText(/\справка (.+)/, (msg, [sourse, match]) => {
 const { chat: { id }} = msg
-bot.sendMessage(id, пошел на хуй лол)
+bot.sendMessage(id, 'пошел на хуй лол')
 })
 
 
