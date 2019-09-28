@@ -11,7 +11,7 @@ bot.on('text', function(msg)
 {
     var messageChatId = msg.chat.id;
     var messageText = msg.text;
-    if (messageText === 'справка')
+    if (messageText === '/start')
     {sendMessageByBot(messageChatId, "Вас приветствует магазин - 🌈420 SHOP_family:🌈"
         + '\n' + "Наши контакты:"
         + '\n' + "Операторы -"
