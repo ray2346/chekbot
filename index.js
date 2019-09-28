@@ -6,10 +6,10 @@ const bot = new TelegramBot (TOKEN, {polling: true})
 bot.on('message', msg =>{
    bot.sendMessage(msg.chat.id,`Привет от chekbot: "Hi,🤝 ${msg.from.first_name}"`)
 })
-end
+
 bot.onText(/\справка (.+)/, (msg, [sourse, match]) => {
 const { chat: { id }} = msg
-bot.sendMessage(id, match)
+bot.sendMessage(id, пошел на хуй лол)
 })
 
 
