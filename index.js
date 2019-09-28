@@ -13,7 +13,10 @@ const { chat: { id }} = msg
 bot.sendMessage(id, 'пошел на хуй лол')
 })
 
-
+bot.onText(/\/start/, (msg, [sourse]) => {
+const { chat: { id }} = msg
+bot.sendMessage(id, 'mkljbjhghghcgfdgfgf')
+})
 
 
 
