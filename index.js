@@ -7,11 +7,8 @@ const bot = new TelegramBot (TOKEN, {polling: true})
 bot.on('text', function(msg)
 {
     var messageChatId = msg.chat.id;
-
     var messageText = msg.text;
-
-    if (messageText === '/start')
-
+    if (messageText === 'справка')
     {sendMessageByBot(messageChatId, "Вас приветствует магазин - 🌈420 SHOP_family:🌈"
         + '\n' + "Наши контакты:"
         + '\n' + "Операторы -"
@@ -40,9 +37,6 @@ bot.on('text', function(msg)
         + '\n' + "[Нажмите 👉 /city9 ]");}});
 
 function sendMessageByBot(aChatId, aMessage)
-
 {
-
     bot.sendMessage(aChatId, aMessage, { caption: 'I\'m a cute bot!' });
-
 }
