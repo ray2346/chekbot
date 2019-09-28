@@ -12,7 +12,7 @@ bot.sendMessage(id, `Привет от chekbot: "Hi,🤝 ${msg.from.first_name}"
 
 bot.onText(/\Справка/, (msg, [sourse]) => {
 const { chat: { id }} = msg
-bot.sendMessage(id, `${msg.from.first_name}, пошел на хуй лол`)
+bot.sendMessage(id, `${msg.from.first_name}, пошел на хуй лол 😭`)
 })
 
 
