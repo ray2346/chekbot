@@ -26,7 +26,7 @@ bot.sendMessage(id, `${msg.from.first_name}, пошел на хуй лол 😭
 bot.onText(/\Готово/, (msg, [sourse]) => {
 const { chat: { id }} = msg
 bot.sendMessage(id, `${msg.from.first_name}, Ваш номер заказа SP0048377923 
-
+ВАЖНО! далее отправь 👉Оплата👈
 👉После оплаты предъявите этот номер оператору:
 оператор 👉 @olya7olya`)
 })
@@ -35,7 +35,7 @@ bot.on('text', function(msg)
 {
     var messageChatId = msg.chat.id;
     var messageText = msg.text;
-    if (messageText === '/оплата')
+    if (messageText === 'Оплата')
     {sendMessageByBot(messageChatId, "Вас приветствует магазин - 🌈420 SHOP_family:🌈"
         + '\n' + "Наши контакты:"
         + '\n' + "Операторы -"
