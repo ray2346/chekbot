@@ -5,12 +5,14 @@ const bot = new TelegramBot (TOKEN, {polling: true})
 
 bot.onText(/\/start/, (msg, [sourse]) => {
 const { chat: { id }} = msg
-bot.sendMessage(id, `Привет от chekbot: "Hi,🤝 ${msg.from.first_name}"`)
+bot.sendMessage(id, `Привет от chekbot: "Hi,🤝 ${msg.from.first_name}"
+Нужна справка? 
+Отсправте слово "Справка" и следуйте указаниям`)
 })
 
 bot.onText(/\Справка/, (msg, [sourse]) => {
 const { chat: { id }} = msg
-bot.sendMessage(id, 'пошел на хуй лол')
+bot.sendMessage(id, `${msg.from.first_name}, пошел на хуй лол`)
 })
 
 
