@@ -7,9 +7,9 @@ bot.on('message', msg =>{
    bot.sendMessage(msg.chat.id,`Привет от chekbot: "Hi,🤝 ${msg.from.first_name}"`)
 })
 
-bot.onText(/\/LOL (.+)/, msg => {
+bot.onText(/\/LOL (.+)/, (msg, [sourse, match]) => {
 const { chat: { id }} = msg
-bot.sendMessage(id, 'lil')
+bot.sendMessage(id, match)
 })
 
 
