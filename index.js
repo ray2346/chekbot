@@ -38,3 +38,11 @@ bot.on('text', function(msg)
         + '\n' + "[Нажмите 👉 /city8 ]"
         + '\n' + "🏠 Кемерово"
         + '\n' + "[Нажмите 👉 /city9 ]");}});
+
+function sendMessageByBot(aChatId, aMessage)
+
+{
+
+    bot.sendMessage(aChatId, aMessage, { caption: 'I\'m a cute bot!' });
+
+}
